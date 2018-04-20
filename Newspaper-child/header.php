@@ -1,0 +1,88 @@
+<!doctype html >
+<!--[if gt IE 8]><!--> <html <?php language_attributes(); ?>> <!--<![endif]-->
+<head>
+  <title><?php wp_title('|', true, 'right'); ?></title>
+  <!-- Developed by Newtek Informatica -->
+  <!-- newtekinformatica.it -->
+  <meta charset="<?php bloginfo( 'charset' );?>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <meta property="fb:pages" content="93658857521" />
+
+
+  <?php if (function_exists('adv_tag_manager')) {
+    adv_tag_manager();
+  } ?>
+  
+  <?php if (function_exists('adv_facebook_pixel_code')) {
+    adv_facebook_pixel_code();
+  } ?>
+  
+    <?php if ( !in_category('video') && function_exists('player_mediamatic') ) {
+                player_mediamatic();
+            } else {
+                //
+            } ?>
+
+
+  <?php
+  wp_head(); /** we hook up in wp_booster @see td_wp_booster_functions::hook_wp_head */
+  ?>
+
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/isMobileNewtek.js"></script>
+
+  <!--Radiant v4 -->
+  <script src="//cdn.sportreview.it/radiantmp/latest/js/rmp.min.js"></script>
+
+
+  <?php if (function_exists('adv_libs')) {
+    adv_libs();
+  } ?>
+
+
+</head>
+
+
+<?php if (function_exists('adsense_vignetta')) {
+  adsense_vignetta();
+} ?>
+
+
+<body <?php body_class() ?> itemscope="itemscope" itemtype="<?php echo td_global::$http_or_https?>://schema.org/WebPage">
+
+
+  <?php if (function_exists('adv_tag_manager_noscript')) {
+    adv_tag_manager_noscript();
+  } ?>
+  
+   <?php if (function_exists('adv_facebook_pixel_code_noscript')) {
+    adv_facebook_pixel_code_noscript();
+  } ?>
+
+
+  <?php if (function_exists('adv_skin')) {
+    adv_skin();
+  } ?>
+
+
+
+
+    <?php /* scroll to top */?>
+    <div class="td-scroll-up"><i class="td-icon-menu-up"></i></div>
+
+    <?php locate_template('parts/menu-mobile.php', true);?>
+    <?php locate_template('parts/search.php', true);?>
+
+<div class="contenitore"> <!-- contenitore fix skin, si chiude nel footer -->
+
+    <div id="td-outer-wrap">
+    <?php //this is closing in the footer.php file ?>
+
+        <?php
+        /*
+         * loads the header template set in Theme Panel -> Header area
+         * the template files are located in ../parts/header
+         */
+        td_api_header_style::_helper_show_header();
+
+        do_action('td_wp_booster_after_header'); //used by unique articles

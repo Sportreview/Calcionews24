@@ -1,0 +1,2303 @@
+/*
+Theme Name:     Newspaper 7 Child theme
+Theme URI:    http://themeforest.net/user/tagDiv/portfolio
+Description:    Child theme made by tagDiv
+Author:         tagDiv
+Author URI:   http://themeforest.net/user/tagDiv/portfolio
+Template:       Newspaper
+Version:        7.0c
+*/
+
+
+/*  ----------------------------------------------------------------------------
+    This file will load automatically when the child theme is active. You can use it
+    for custom CSS.
+*/
+
+/* Fix spazio vuoto in alto */
+body {
+  line-height: 0;
+}
+
+/* Main Menu */
+.sf-menu > li > a { padding: 0 7px; }
+.sf-menu ul li { background: #000; }
+.sf-menu ul .td-menu-item > a { color: #fff; }
+.td-header-style-3 .td-header-sp-logo { margin: 10px 28px; position: inherit; }
+.td-header-style-9 .td-logo-wrap-full { line-height: 110px; min-height: 110px; }
+.td-header-style-9 .td-logo-wrap-full .td-logo { line-height: 110px; }
+.td-js-loaded .td-menu-background, .td-js-loaded #td-mobile-nav { visibility: hidden; }
+
+/*FIX Menu Mobile */
+#td-mobile-nav { 
+  z-index: 999999999 !important; 
+}
+.td-menu-background { 
+  top: 0px !important; 
+}
+/*FIX Menu Mobile */
+
+/* Header ad */
+.td-header-rec-wrap { max-height: 90px; }
+
+/* Fix skin */
+.contenitore { margin: 0 auto; background-color: #fff; }
+
+/* Homepage Newsticker padding top */
+.td-main-page-wrap { padding-top: 5px; }
+
+.td_block_trending_now { padding: 0; }
+.masthead { margin-bottom: 6px; }
+.td_data_time { margin-left: 5px; }
+.td-post-template-default .td-post-title div.td-post-views { display: none; }
+
+/* Fix Block 11 padding */
+.td_module_10 {
+  padding-bottom: 10px !important;
+}
+
+.td_module_10 .td-excerpt {
+  line-height: 20px;
+}
+
+h2 { font-size: 22px; line-height: 30px; margin-top: 10px; margin-bottom: 15px; }
+h3 > a { color: #000; }
+h3:hover > a { color: #000; }
+.td-post-category { background-color: #000; }
+.td-category a { background-color: #000 !important; }
+.td-module-comments a  { background-color: #00b415; }
+.td_module_wrap { padding-bottom: 0px; }
+.td_module_16 { padding-bottom: 10px !important; }
+.td_module_6 { padding-bottom: 10px !important; }
+.td-main-content-wrap { padding-bottom: 0px; }
+.td-category-description { width: 100%; }
+.td-crumb-container { padding-top: 5px; min-height: 20px; }
+.td-category-header .td-category-pulldown-filter { top: 35px; }
+.td-post-author-name div { display: inline !important; }
+.td-post-author-name a { font-size: 12px !important; }
+
+/* Sidebar widgets */
+.widget { margin-bottom: 0px; }
+.widget_text {margin-bottom: 2px; }
+.content-home { border-right: 1px solid #ececec; }
+.td-main-content { border-right: 1px solid #ececec; }
+.manchette { text-align: center; }
+.manchette img { border: 1px solid #ececec; }
+
+/* Feedzy Rss Style */
+.feedzy-rss { margin: 10px 0px; }
+.feedzy-rss ul li { line-height: 1.3em; padding: 5px 0 !important; }
+.feedzy-rss .rss_item { border-bottom: none; }
+.feedzy-rss .rss_item .rss_image { margin: 0.1em 1em 0 0 !important; }
+.feedzy-rss ul li:first-child { margin-bottom: 15px; }
+.feedzy-rss ul li:first-child .rss_image { width: 100% !important; height: 180px !important; margin-bottom: 10px !important; }
+.feedzy-rss ul li:first-child .rss_content small { display: none; }
+.feedzy-rss ul li:first-child .title { font-size: 18px; }
+.feedzy-rss .rss_item .rss_content small { color: red; font-weight: 600; font-style: normal; }
+.feedzy-tutte-news a { float: right; margin-right: 10px; color: #0560a0; text-transform: uppercase; font-size: 13px; font-weight: 600; }
+
+
+/* Squadre 2017-2018 */
+.squadre {
+  border: 1px solid #ececec;
+  height: 40px;
+  margin: 5px auto;
+}
+
+.squadre a div {
+  background: url(./images/squadre-2017-2018.svg);
+  background-size: 300px;
+  float: left;
+  height: 41px;
+  margin-right: 12px;
+  width: 41px;
+}
+
+#atalanta { background-position: -3px 40px; margin-left: 5px; }
+#benevento { background-position: 48px -7px; }
+#bologna { background-position: -3px 142px; }
+#cagliari { background-position: 93px 86px; }
+#chievo { background-position: -5px -6px; }
+#crotone { background-position: 143px -6px; }
+/*#empoli { background-position: -3px 92px; }*/
+#fiorentina { background-position: -56px -6px; }
+#genoa { background-position: -154px 90px; }
+#hellas-verona { background-position: -251px 142px; }
+#inter { background-position: -105px 143px; }
+#juventus { background-position: -207px 142px; }
+#lazio { background-position: -54px 141px; }
+#milan { background-position: -54px 92px; }
+#napoli { background-position: -107px -6px; }
+/*#palermo { background-position: -156px 42px; }
+#pescara { background-position: 44px -6px; }*/
+#roma { background-position: -105px 92px; }
+#sampdoria { background-position: -156px 143px; }
+#sassuolo { background-position: -207px 41px; }
+#spal { background-position: 46px 90px; }
+#torino { background-position: -105px 42px; }
+#udinese { background-position: -54px 41px; }
+/* Squadre 2017-2018 */
+
+
+/* Info Squadra */
+.info-squadra { margin-top: 0; padding: 3px 0; color: #fff; height: 136px; background-size: 100%;
+    background: url(./images/sfondo-serie-a.png); background-repeat: no-repeat; }
+.info-squadra-logo { background: url(./images/squadre-2017-2018.svg); float: left;
+  width: 96px; height: 136px; background-size: 851px; }
+.info-squadra-logo-atalanta { background-position: -16px 115px; }
+.info-squadra-logo-benevento { background-position: 125px 487px; background-size: 761px; }
+.info-squadra-logo-bologna { background-position: -14px 402px; }
+.info-squadra-logo-cagliari { background-position: 255px 242px; }
+.info-squadra-logo-genoa { background-position: 407px 254px; }
+.info-squadra-logo-chievo { background-position: -14px 507px; background-size: 656px; }
+.info-squadra-logo-crotone { background-position: 290px 629px; background-size: 821px; }
+.info-squadra-logo-empoli { background-position: 834px 822px; }
+.info-squadra-logo-fiorentina { background-position: -166px 552px; }
+.info-squadra-logo-genoa { background-position: 408px 250px; }
+.info-squadra-logo-hellas-verona { background-position: 129px 398px; }
+.info-squadra-logo-inter { background-position: -292px 389px; background-size: 821px; }
+.info-squadra-logo-juventus { background-position: 260px 400px; }
+.info-squadra-logo-lazio { background-position: -118px 337px; background-size: 681px; }
+.info-squadra-logo-milan { background-position: -167px 255px; }
+.info-squadra-logo-napoli { background-position: -280px 502px; background-size: 781px; }
+.info-squadra-logo-palermo { background-position: 278px 129px; }
+.info-squadra-logo-pescara { background-position: 124px -19px; }
+.info-squadra-logo-roma { background-position: -307px 264px; }
+.info-squadra-logo-sampdoria { background-position: 400px 405px; }
+.info-squadra-logo-sassuolo { background-position: 257px 113px; }
+.info-squadra-logo-spal { background-position: 128px 253px; }
+.info-squadra-logo-torino { background-position: -305px 116px; }
+.info-squadra-logo-udinese { background-position: -159px 118px; }
+
+.info-squadra .sp-template { margin-bottom: 0; }
+
+.info-squadra-text { float: left; width: 40%; padding-left: 10px; }
+.info-squadra-text p { margin-bottom: 0px; }
+.info-squadra-text p span { font-weight: bold; color: #00b415; }
+.info-squadra-match { float: left; width: 50%; }
+.info-squadra-match .sp-data-table .data-name { border: none; border-right: 1px solid rgba(239, 239, 239, 0.11); }
+.info-squadra-match .sp-data-table .data-name:first-child { border-left: 1px solid rgba(239, 239, 239, 0.11); }
+.info-squadra-match .sp-scoreboard-nav { background: none; border: none; font-size: 32px; }
+.info-squadra-match .sp-scoreboard-nav:hover { color: #00b415; }
+.info-squadra-match .sp-scoreboard-prev:before, .info-squadra-match .sp-scoreboard-next:before { margin-left: -16px; }
+.info-squadra-match .sp-scoreboard-date, .info-squadra-match .sp-scoreboard-time { display: inline-block; }
+.info-squadra-match .sp-scoreboard-venue { font-size: 12px; line-height: 15px; }
+.info-squadra-match .sp-scoreboard-team { line-height: 1.8em; }
+
+/* SportsPress Classifiche */
+.widget .sp-data-table td, .widget .sp-data-table th { padding: 2px 3px; font-size: 13px; }
+.widget .sp-data-table thead tr { background-color: #333; color: #fff; }
+.widget .sp-league-table td.has-logo { padding: 2px 1px; }
+ul#tabs { list-style-type: none; margin: 0px; padding: 0px; text-align: left; }
+ul#tabs li { display: inline-block; background-color: #00b415; border-bottom: solid 5px #00700E; padding: 5px 20px; margin-bottom: 4px;
+  margin-left: 0px; color: #fff; cursor: pointer; border-radius: 5px; }
+ul#tabs li:hover { background-color: #00700E; }
+ul#tabs li.active { background-color: #00700E; }
+ul#tab { list-style-type: none; margin: 0; padding: 0; border-top: solid 5px #00700E; margin-top: -9px; }
+ul#tab li { display: none; }
+ul#tab li.active { display: block; margin-left: 0; }
+ul#tab li h2 { font-weight: 400; margin-bottom: 30px; padding-bottom: 5px; border-bottom: solid 5px #00b415; }
+
+.widget .sp-data-table td, .widget .sp-data-table th {
+  font-size: 12px;
+  padding: 2px;
+  text-align: center;
+}
+
+.widget .sp-league-table td.has-logo {
+  text-align: left;
+}
+
+.sp-template-event-logos { font-size: 36px; }
+
+
+/*  Wp Polls plugin  */
+.wp-polls { padding: 0px 5px; }
+.widget_polls-widget { border: 1px solid #ececec; }
+.sondaggio-disabilitato { padding: 0 10px; }
+.td-post-template-2 .td-post-header .entry-title { color: #00b415; }
+
+.td-trending-now-wrapper { padding: 0 25px; }
+.td-trending-now-wrapper .td-next-prev-wrap { right: 25px; }
+
+.fotogallery-title { text-transform: uppercase; padding: 0 0 0 15px; }
+.fotogallery-title h4 { text-transform: uppercase; font-size: 32px; font-family: 'Oswald'; color: #00b415; font-weight: 600; }
+
+.block-title { border-bottom: none; margin-bottom: 10px; }
+.block-title span { font-size: 20px; line-height: 22px; font-family: 'Oswald'; text-transform: uppercase; color: #ffffff;
+  background-color: #00b415; padding: 5px 0px 5px 15px; border: none; display: block; }
+.widget_text .block-title { margin-bottom: 10px; }
+
+.td-footer-wrapper .block-title a, .td-footer-wrapper .block-title span, .td-footer-wrapper .block-title label { text-shadow: 1px 1px 1px #000; }
+
+.topbar-login { line-height: 28px; }
+.topbar-profile, .topbar-logout, .topbar-login, .topbar-signin { display: inline-block; padding-right: 20px; }
+.topbar-profile a:hover, .topbar-logout a:hover, .topbar-login a:hover, .topbar-signin a:hover { color: #00b415 !important; }
+#reply-title { color: #00b415; }
+.logged-in-as a { color: #00b415; }
+.logged-in-as a:hover { color: #000 !important; }
+
+
+
+/* Radiant Media Player
+---------------------
+.rmp-pl, .rmp-pl-items { height: 422px !important; }
+.rmp-pl>.rmp-container { width: 750px !important; height: 422px !important; }
+.rmp-pl-container { width: 318px !important; }
+.rmp-pl-bottom { display: none; }
+
+-------------------- */
+
+.playlist_holder { margin: 10px 0px; }
+
+.video-playlist-title {
+  margin: 30px 0px 0px 0px;
+}
+
+.video-playlist-title p {
+  background-color: #00b415;
+  color: #ffffff;
+  font-family: 'Oswald';
+  font-size: 28px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px !important;
+  margin-bottom: 0px !important;
+  padding: 5px 0px 5px 15px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.playlist-container .rmp-playlist-container { width: 1068px !important; }
+.playlist-container .rmp-playlist-player-wrapper { width: 760px !important; }
+.rmp-playlist-side-menu { height: 428px !important; }
+.rmp-playlist-header { display: none; }
+
+.rmp-playlist-item-poster-wrapper { text-align: center; } /* center align smaller images */
+.rmp-playlist-item-poster { height: auto; width: auto !important; max-height: 80%; } /* fix images with different proportions */
+.rmp-playlist-item-title { white-space: pre-line !important; line-height: 1.4em; }
+.rmp-playlist-side-menu .rmp-playlist-item-active,
+  .rmp-playlist-item:not(.rmp-playlist-item-active):hover { background-color: #000 !important; color: #fff !important; }
+.rmp-playlist-item-description { display: none; }
+
+/*.rmp-playlist-player-wrapper { width: 750px !important; }
+.rmp-playlist-header { display: none; }
+.rmp-playlist-side-menu { width: 322px !important; height: 422px !important; }*/
+
+/*.rmp-inpp-overlay-menu {
+  width: 530px !important;
+  max-height: 100px !important;
+}
+.rmp-inpp-overlay-menu::-webkit-scrollbar-thumb {
+  background-color: #00b415 !important;
+}*/
+
+/*.rmp-i:hover,
+.rmp-cc-button:hover:not(.rmp-cc-button-active),
+.rmp-audios-item:hover:not(.rmp-audios-item-active),
+.rmp-rate:hover:not(.rmp-rate-active),
+.rmp-quality:hover:not(.rmp-quality-active),
+.rmp-inpp-li-active,
+.rmp-inpp-li:hover {
+  color: #00b415 !important;
+}*/
+
+#slideplayer-container {
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+#slideplayer-container:not(.rmp-fullscreen-on) {
+  -webkit-transition: width 0.4s ease-out, height 0.4s ease-out;
+  -moz-transition: width 0.4s ease-out, height 0.4s ease-out;
+  transition: width 0.4s ease-out, height 0.4s ease-out;
+}
+
+#slideplayer-container.rmp-detach {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999999;
+}
+
+.slideplayer-chiudi {
+  border: none;
+  padding: 0px;
+  background: none;
+  color: #fff;
+  display: none;
+  position: absolute;
+  top:1px;
+  left: 3px;
+  z-index: 20;
+}
+
+.slideplayer-chiudi .fa {
+  font-size: 16px;
+}
+
+.slideplayer-chiudi .fa:hover {
+  color: #00b415;
+  transition: color 0.5s ease-in-out;
+}
+
+/*Player Essentials*/
+.chiudi_player {
+  padding: 5px 15px;
+  background: #00b415;
+  color:#fff;
+  cursor: pointer;
+  display: none;
+  margin: 0px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.PlayerHolder {
+  width: 100%;
+}
+#video-onslide{  margin: 0px 0px 15px 0px; }
+.follow-fixed-player {
+  width: 320px!important;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999999;
+}
+
+.follow-holder-player {
+  position: relative;
+  bottom: inherit;
+  right: inherit;
+  z-index: 600;
+}
+
+.sportreview-heading-video {
+  margin: 0px;
+  padding: 15px;
+  background: #303e4b;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.slideout {
+  text-align: center;
+  font-size: 10px;
+}
+/*Player Essentials*/
+
+/* Mediamatic Player */
+#mm-player div:first-of-type {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+/* Mediamatic Player */
+
+.mCSB_inside > .mCSB_container { margin-right: 0px !important; }
+
+.masthead-single { margin-top: 5px; margin-bottom: -15px; clear: both; }
+.td-a-rec-id-custom_ad_1 > div { margin-bottom: 7px; }
+.td-a-rec-id-custom_ad_2 { margin-bottom: 10px; }
+
+.newtekadv { text-align: center;  margin: 0px 0px 15px 0px; }
+.newtekadv div { margin: 0 auto; }
+.newtekadv-mobile-top { text-align: center; }
+.newtekadv-mobile-bottom { display: none; margin: 0; position: fixed; bottom: 0px; z-index: 10; height: 50px; width: 100%; }
+.newtekadv-mobile-bottom div { margin: 0 auto; }
+
+#div-gpt-ad-1481538888836-0 { height: 0; }
+
+.adv_inarticle {
+  margin-bottom: 20px;
+}
+
+/* Fix img */
+/*img[width="1"] {
+  position: absolute!important;
+  width: auto!important;
+}
+img[width="0"] {
+  position: absolute!important;
+  width: auto!important;
+}*/
+
+.store-icons { background: url(./images/store-icons.png);
+  background-repeat: no-repeat; width: 33%; height: 37px; float:left; }
+.store-android { background-position: 0px 0px; }
+.store-apple { background-position: -108px 0px; }
+.store-windows { background-position: -217px 0px; margin-bottom: 10px; }
+
+#fotogallery-home-row { display: none; }
+.td-post-featured-image img { margin-bottom: 0px; }
+.photo-copyright { font-size: 11px; font-style: italic; }
+
+a.post-prev-thumb { float: left; }
+a.post-next-thumb { float: right; }
+a.post-prev-thumb img { margin: 0px 5px 0px 0px; }
+a.post-next-thumb img { margin: 0px 0px 0px 5px; }
+.td-post-next-prev-content a { margin-bottom: 0px; }
+.td-post-next-prev-content span { font-size: 18px; display: inline-block; }
+.post-prev-next i { font-size: 20px; color: #00b415; }
+.post-prev-next .fa-arrow-circle-left { padding-right: 10px; }
+.post-prev-next .fa-arrow-circle-right { padding-left: 10px; }
+.td-post-prev-post a { padding-right: 10px; }
+.td-post-next-post a { padding-left: 10px; }
+
+.td-post-content { text-align: justify; }
+
+.instagram-pics li { margin-left: 0px; text-align: center; }
+
+.td_block_slide .td-image-gradient:before {
+    visibility: hidden;
+}
+.td-js-loaded .td_block_slide .td-image-gradient:before {
+    visibility: visible;
+}
+
+/* Fix Video Still on top*/
+#floorvideo { z-index: 9999999999 !important; }
+
+
+/* =============== GALLERY CUSTOM=============== */
+
+.page-nav:first-child > div {
+  background-color: transparent!important;
+  border: none;
+  border-color: none;
+  color: #fff;
+  padding: 0px;
+}
+.page-nav a {
+  border: none;
+  border-radius: 0px;
+  padding: 0px;
+}
+.post img { opacity: 1!important; }
+.td-main-content .td-post-content { border-top: none; }
+.single-format-gallery .td-main-content .td-post-content { overflow: hidden; } /*Fix riky per tabelle che non scrollavano x*/
+.gallery-overlay { background: rgba(0,0,0,0.7); width: 100%; height: 100%; position: fixed; top:0; left:0; z-index: 3; display: none; }
+#gallery-holder { z-index: 999999999!important; position: relative; }
+
+#gallery-nav-holder {
+  margin: 20px 0px;
+  position: relative;
+  top: 0%;
+  width: 100%;
+  z-index: 999999999 !important;
+}
+
+.gallery-nav-custom {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.arrow-fotogallery {
+  position: absolute;
+  bottom: 0;
+  color: #00b415;
+  padding: 15px 30px;
+  transition: all 0.5s;
+}
+
+.arrow-fotogallery-previous {
+  left: 0;
+}
+
+.arrow-fotogallery-next {
+  right: 0;
+}
+
+.arrow-fotogallery span {
+  border-color: #00b415;
+  color: #00b415;
+}
+
+.arrow-fotogallery span:hover {
+  background-color: #00b415;
+  border-color: #009c12;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+#loading-gallery { width: 100%; padding: 70px 50px; color: #00b415; text-align: center; display: none; font-weight: bold; }
+#gallery-holder h2 { padding: 20px 20px !important; }
+
+
+/* FIX DETTAGLI BY RIKY============================================= */
+.td-crumb-container {
+    padding: 5px 15px;
+    border-bottom: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    margin: 0px -1px;
+}
+
+.category .td-crumb-container {
+  margin: 0px -1px;
+}
+
+.leaderboard-adv {
+  padding: 15px;
+  border-left: 1px solid #ececec;
+  margin: 0px!important;
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  width: 100%;
+}
+
+.squadre {
+  margin: 0px auto;
+}
+
+.td-main-sidebar {
+  border-right: 1px solid #ececec;
+}
+
+.content-home,
+.content-page,
+.sidebar-home {
+  padding-top: 25px;
+}
+
+.single .td-pb-row [class*="td-pb-span"] {
+  padding: 22px;
+}
+
+.category .td-pb-row [class*="td-pb-span"] {
+  padding: 22px;
+}
+
+.sidebar-home,
+.sidebar-page {
+  background: #f7f7f7;
+  border-right: 1px solid #ececec;
+}
+
+.sidebar-page {
+  padding-top: 25px;
+}
+
+.td-main-page-wrap {
+  padding-top: 0px!important;
+}
+
+.td_block_trending_now {
+  padding: 15px 0px;
+}
+
+#category-info-holder .td-pb-row [class*="td-pb-span"] {
+  padding: 0px 25px 25px 25px;
+}
+
+.td_category_template_1 .td-category-header {
+  padding-bottom: 0px;
+  border-bottom: 1px solid #ececec;
+}
+
+#strossle {
+  margin: 0px 0px 25px 0px;
+}
+
+.td-category-header .td-page-title {
+    margin-top: 10px;
+}
+
+
+/*Fix 4w*/
+.m3_container.calcionews_630x275 .a {
+    padding: 12px!important;
+}
+.m3_container.calcionews_630x275 {
+    width: 690px!important;
+}
+/*Fix 4w*/
+
+/*Fix elenchi ol tagliati*/
+.td-post-content ol {
+  padding-left: 5px;
+}
+
+
+/*Fix visual composer categoria VIDEO*/
+.category-video .td_block_big_grid_2 {
+  padding-bottom:0px;
+}
+
+.category-video #category-info-holder .td-pb-row [class*="td-pb-span"] {
+  padding: 0 24px 0px;
+}
+/*Fix visual composer categoria VIDEO*/
+
+
+div[width="1"] { position: absolute!important; }
+
+
+.td-main-sidebar,
+.sidebar-page,
+.sidebar-home {
+  width: 30.333333%;
+  padding: 15px!important;
+}
+
+.content-home,
+.content-page,
+.td-main-content {
+ width: 67.5555557%;
+}
+
+
+.iosSlider-col-2 .entry-thumb{width: 100%!important;} /*Fix slider home*/
+
+/* FIX DETTAGLI BY RIKY============================================= */
+
+
+
+
+
+.td-post-featured-image .wp-caption-text {
+  margin-bottom: 15px;
+}
+
+
+/* Social Share */
+.share-container {
+  line-height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.shareboxes {
+  display: inline-block;
+}
+
+.sharebox {
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 5px;
+  text-align: center;
+  width: 50px; 
+}
+
+.sharebox:hover,
+.sharebox:visited,
+.sharebox:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sharefacebook {
+  background: #3b5998;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.results_share {
+  padding: 0px 0px 0px 5px;
+}
+
+.sharegoogle {
+  background: #dc483c;
+}
+
+.sharetwitter {
+  background: #1da1f2;
+}
+
+.sharewhatsapp {
+  display: none;
+  background: #25d366;
+}
+
+
+@media (max-width: 768px) { .sharefacebook {  } }
+@media (max-width: 768px) { .sharetwitter {  } }
+@media (max-width: 768px) { .sharewhatsapp { display: block; } }
+/* Social Share */
+
+
+
+
+/* Remove links from category tags */
+.category .td-post-category,
+.home .td-post-category {
+  pointer-events: none;
+}
+/* Remove links from category tags */
+
+
+/* Box Breadcrumbs */
+.td-crumb-container {
+  display: none;
+}
+/* Box Breadcrumbs */
+
+
+/* Fix Authors Page */
+.td-authors-name {
+  line-height: 3em;
+}
+/* Fix Authors Page */
+
+
+
+/*-----------------
+   Media Queries
+-----------------*/
+@media screen and (max-width: 320px) {
+  .follow-fixed-player {
+    right: 0px;
+  }
+  .td-js-loaded .td-menu-background, .td-js-loaded #td-mobile-nav { visibility: visible; }
+  .td-header-style-3 .td-header-sp-logo { margin: 25px 20px; }
+  /* fix menu social buttons */
+/*  .td-header-menu-wrap.td-affix { top: 50px; }*/
+  /* fix menu social buttons */
+  .leaderboard-adv { display: none; }
+  .newtekadv-mobile-bottom { display: block; }
+  /* footer fix mobile bottom ad */
+  .td-sub-footer-container { padding-bottom: 50px; }
+  /* footer fix mobile bottom ad */
+  .video-home-row { padding: 0px !important; }
+  .video-home-row .td-container { padding: 0px !important; }
+  .video-home-row .td-pb-row { padding: 0px !important; }
+  .squadre { border: none; height: 120px; }
+  #atalanta { margin-left: 0px; }
+  .info-squadra { background: url(./images/sfondo-serie-a-450.jpg);
+    background-repeat: repeat-y; background-position-x: 50%; height: 260px; padding: 4px 0; }
+  .info-squadra-logo { height: 116px; }
+
+  /* fix scoreboard */
+  .sp-scoreboard-wrapper { padding: 0 5px; }
+  .sp-scoreboard-nav { line-height: 0px; }
+  .info-squadra-match .sp-scoreboard-nav { z-index: 2; }
+
+  .squadre a div { margin-right: -4px; }
+  .info-squadra-text { padding-left: 0px; width: 70%; line-height: 16px; }
+  .info-squadra-text p { font-size: 12px; line-height: 16px; display: inline-block; }
+  .info-squadra-match { width: 100%; }
+  .info-squadra-logo-atalanta { width: 51px; height: 96px; background-position: -21px 90px; background-size: 500px; }
+  a.post-prev-thumb, a.post-next-thumb { float: none; margin-bottom: 0px; }
+  a.post-prev-thumb img, a.post-next-thumb img { margin: 0px; }
+  .td-main-content { border-right: none; }
+  .td-post-next-prev-content span { display: none; }
+  .single .comments { margin-bottom: 0px; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .share-container {
+    left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: center;
+    top: 4px;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 389px) {
+  .follow-fixed-player {
+    right: 0px;
+  }
+  .td-js-loaded .td-menu-background, .td-js-loaded #td-mobile-nav { visibility: visible; }
+  .td-header-style-3 .td-header-sp-logo { margin: 25px 20px; }
+  /* fix menu social buttons*/
+  /*.td-header-menu-wrap.td-affix { top: 50px; }*/
+  /* fix menu social buttons */
+  .leaderboard-adv { display: none; }
+  .newtekadv-mobile-bottom { display: block; }
+  /* footer fix mobile bottom ad */
+  .td-sub-footer-container { padding-bottom: 50px; }
+  /* footer fix mobile bottom ad */
+  .squadre { border: none; height: 120px; }
+  #atalanta { margin-left: 0px; }
+  .info-squadra { background: url(./images/sfondo-serie-a-450.jpg);
+    background-repeat: repeat-y; background-position: 50%; height: 260px; padding: 4px 0; }
+  .squadre a div { margin-right: -4px; }
+  .info-squadra-logo { height: 116px; }
+  .info-squadra-text { padding-left: 0px; width: 70%; height: 90px; line-height: 16px; }
+  .info-squadra-text p { font-size: 13px; line-height: 17px; display: inline-block; }
+  .info-squadra-match { width: 100%; }
+  a.post-prev-thumb, a.post-next-thumb { float: none; margin-bottom: 0px; }
+  a.post-prev-thumb img, a.post-next-thumb img { margin: 0px; }
+  .td-main-content { border-right: none; }
+  .td-post-next-prev-content span { display: none; }
+  .single .comments { margin-bottom: 0px; }
+  .video-home-row { padding: 0px !important; }
+  .video-home-row .td-container { padding: 0px !important; }
+  .video-home-row .td-pb-row { padding: 0px !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .share-container {
+    left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: center;
+    top: 4px;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  .follow-fixed-player {
+    right: 0px;
+  }
+  .td-js-loaded .td-menu-background, .td-js-loaded #td-mobile-nav { visibility: visible; }
+  .td-header-style-3 .td-header-sp-logo { margin: 25px 20px; }
+  /* fix menu social buttons*/
+  /*.td-header-menu-wrap.td-affix { top: 50px; }*/
+  /* fix menu social buttons */
+  .leaderboard-adv { display: none; }
+  .newtekadv-mobile-bottom { display: block; }
+  /* footer fix mobile bottom ad */
+  .td-sub-footer-container { padding-bottom: 50px; }
+  /* footer fix mobile bottom ad */
+  .squadre { border: none; height: 80px; }
+  #atalanta { margin-left: 0px; }
+  .info-squadra { background: url(./images/sfondo-serie-a-450.jpg);
+    background-repeat: repeat-y; background-position: 50%; height: 260px; padding: 4px 0; }
+  .squadre a div { margin-right: -4px; }
+  .info-squadra-logo { height: 116px; }
+  .info-squadra-text { padding-left: 0px; width: 70%; height: 90px; line-height: 16px; }
+  .info-squadra-text p { font-size: 13px; line-height: 17px; display: inline-block; }
+  .info-squadra-match { width: 100%; }
+  a.post-prev-thumb, a.post-next-thumb { float: none; margin-bottom: 0px; }
+  a.post-prev-thumb img, a.post-next-thumb img { margin: 0px; }
+  .td-main-content { border-right: none; }
+  .td-post-next-prev-content span { display: none; }
+  .single .comments { margin-bottom: 0px; }
+  .video-home-row { padding: 0px !important; }
+  .video-home-row .td-container { padding: 0px !important; }
+  .video-home-row .td-pb-row { padding: 0px !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .share-container {
+    left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: center;
+    top: 4px;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 510px) {
+  .follow-fixed-player {
+    right: 0px;
+  }
+  .td-js-loaded .td-menu-background, .td-js-loaded #td-mobile-nav { visibility: visible; }
+  .td-main-content { border-right: none; }
+  /* fix menu social buttons*/
+  /*.td-header-menu-wrap.td-affix { top: 50px; }*/
+  /* fix menu social buttons */
+  .leaderboard-adv { display: none; }
+  .newtekadv-mobile-bottom { display: block; }
+  /* footer fix mobile bottom ad */
+  .td-sub-footer-container { padding-bottom: 50px; }
+  /* footer fix mobile bottom ad */
+  .td-header-style-3 .td-header-sp-logo { margin: 25px 20px; }
+  /********************************/
+  .squadre { border: none; }
+  #atalanta { margin-left: 0px; }
+  .info-squadra { background: url(./images/sfondo-serie-a-820.jpg);
+    background-repeat: repeat-y; background-position: 50%; background-size: 170%; height: 260px; padding: 4px 0; }
+  .squadre a div { margin-right: -4px; }
+  .info-squadra-logo { height: 116px; }
+  .info-squadra-text { padding-left: 0px; width: 76%; line-height: 16px; }
+  .info-squadra-text p { font-size: 13px; line-height: 17px; display: inline-block; }
+  .info-squadra-match { width: 100%; }
+  a.post-prev-thumb, a.post-next-thumb { float: none; margin-bottom: 0px; }
+  a.post-prev-thumb img, a.post-next-thumb img { margin: 0px; }
+  .td-main-content { border-right: none; }
+  .single .comments { margin-bottom: 0px; }
+  .video-home-row { padding: 0px !important; }
+  .video-home-row .td-container { padding: 0px !important; }
+  .video-home-row .td-pb-row { padding: 0px !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .share-container {
+    left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: center;
+    top: 4px;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 511px) and (max-width: 767px) {
+  .follow-fixed-player {
+    right: 0px;
+  }
+  .td-js-loaded .td-menu-background, .td-js-loaded #td-mobile-nav { visibility: visible; }
+  /* fix menu social buttons*/
+  /*.td-header-menu-wrap.td-affix { top: 50px; }*/
+  /* fix menu social buttons */
+  .leaderboard-adv { display: none; }
+  .newtekadv-mobile-bottom { display: block; }
+  /* footer fix mobile bottom ad */
+  .td-sub-footer-container { padding-bottom: 50px; }
+  /* footer fix mobile bottom ad */
+  .squadre { border: none; height: 80px; }
+  #atalanta { margin-left: 0px; }
+  .info-squadra { background: url(./images/sfondo-serie-a-820.jpg);
+    background-repeat: repeat-y; background-position: 50%; background-size: auto; height: 260px; padding: 4px 0; }
+  .squadre a div { margin-right: -4px; }
+  .info-squadra-logo { height: 116px; }
+  .info-squadra-text { padding-left: 0px; width: 76%; line-height: 16px; }
+  .info-squadra-text p { font-size: 13px; line-height: 17px; display: inline-block; }
+  .info-squadra-match { width: 100%; }
+  a.post-prev-thumb, a.post-next-thumb { float: none; margin-bottom: 0px; }
+  a.post-prev-thumb img, a.post-next-thumb img { margin: 0px; }
+  .td-main-content { border-right: none; }
+  .single .comments { margin-bottom: 0px; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .share-container {
+    left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: center;
+    top: 4px;
+    z-index: 999;
+  }
+}
+
+@media screen and (width: 768px) {
+  .follow-fixed-player {
+    right: 0px;
+  }
+  .td-header-style-3 .td-header-sp-logo { margin: 25px 20px; }
+  /* fix menu social buttons*/
+  /*.td-header-menu-wrap.td-affix { top: 50px; }*/
+  /* fix menu social buttons */
+  .leaderboard-adv { display: none; }
+  .newtekadv-mobile-bottom { display: block; }
+  /* footer fix mobile bottom ad */
+  .td-sub-footer-container { padding-bottom: 50px; }
+  /* footer fix mobile bottom ad */
+  #atalanta { margin-left: -5px; }
+  .info-squadra { height: 170px; background: url(./images/sfondo-serie-a-768.png);
+    background-repeat: repeat-y; background-position-x: -148px; padding: 4px 0; }
+  .squadre a div { margin-right: -4px; }
+  .info-squadra-text { padding-left: 0px; width: 86%; line-height: 16px; }
+  .info-squadra-text p { font-size: 12px; line-height: 16px; display: inline-block; }
+  .info-squadra-match { width: 87%; padding-top: 10px; }
+  a.post-prev-thumb, a.post-next-thumb { float: none; margin-bottom: 0px; }
+  a.post-prev-thumb img, a.post-next-thumb img { margin: 0px; }
+  .td-container { width: 100%; }
+  .td-main-content { border-right: none; }
+  .td-pb-span8 { width: 60.9%; }
+  .td-pb-span4 { width: 39.1%; padding: 0px; }
+  .td-rec-hide-on-tp { display: block !important; }
+  .td-a-rec-id-custom_ad_2, .td-a-rec-id-custom_ad_3, .td-a-rec-id-custom_ad_4, .td-a-rec-id-custom_ad_5 { margin-left: -17px; }
+  .content-home { border: none; }
+  .single .comments { margin-bottom: 0px; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; height: auto !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  .rmp-playlist-item { height: 84px !important; }
+  .rmp-playlist-item-number { font-size: 20px !important; line-height: 84px !important; }
+  .rmp-playlist-item-poster-wrapper { text-align: center !important; }
+  .rmp-playlist-item-poster { width: 60% !important; }
+  .rmp-playlist-item-title { font-size: 18px !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .follow-fixed-player {
+    right: 0px;
+  }
+  .squadre { border: none; }
+  #atalanta { margin-left: 0px; }
+  .info-squadra { height: 170px; background: url(./images/sfondo-serie-a-768.png);
+    background-repeat: repeat-y; background-position-x: -148px; padding: 4px 0; }
+  .squadre a div { margin-right: -4px; }
+  .info-squadra-text { padding-left: 0px; width: 86%; line-height: 16px; }
+  .info-squadra-text p { font-size: 12px; line-height: 16px; display: inline-block; }
+  .info-squadra-match { width: 87%; padding-top: 10px; }
+  .td-pb-span8 { width: 60.9%; }
+  .td-pb-span4 { width: 39.1%; padding: 0px; }
+  .td-rec-hide-on-tp { display: block !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  .rmp-playlist-item { height: 84px !important; }
+  .rmp-playlist-item-number { font-size: 20px !important; line-height: 84px !important; }
+  .rmp-playlist-item-poster-wrapper { text-align: center !important; }
+  .rmp-playlist-item-poster { width: 60% !important; }
+  .rmp-playlist-item-title { font-size: 18px !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .follow-fixed-player {
+    right: 0px;
+  }
+  .squadre { border: none; }
+  #atalanta { margin-left: 0px; }
+  .info-squadra { height: 170px; background: url(./images/sfondo-serie-a-768.png);
+    background-repeat: repeat-y; background-position-x: -148px; padding: 4px 0; }
+  .squadre a div { margin-right: -4px; }
+  .info-squadra-text { padding-left: 0px; width: 86%; line-height: 16px; }
+  .info-squadra-text p { font-size: 12px; line-height: 16px; display: inline-block; }
+  .info-squadra-match { width: 87%; padding-top: 10px; }
+  .td-pb-span8 { width: 60.9%; }
+  .td-pb-span4 { width: 39.1%; padding: 0px; }
+  .td-rec-hide-on-tp { display: block !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 100% !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 100% !important; height: auto !important; }
+  .rmp-playlist-side-menu { width: 100% !important; }
+  .rmp-playlist-item { height: 84px !important; }
+  .rmp-playlist-item-number { font-size: 20px !important; line-height: 84px !important; }
+  .rmp-playlist-item-poster-wrapper { width: 16% !important; text-align: center !important; }
+  .rmp-playlist-item-text-area { left: 34% !important; width: 62% !important; }
+  .rmp-playlist-item-title { font-size: 18px !important; }
+  /* Playlist */
+  .video-playlist-title p {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1365px) {
+  /*.contenitore { background-color: #fff; }*/
+  .squadre a div { margin-right: 7px; }
+  #atalanta { margin-left: 0px; }
+  .td-header-style-3 .td-header-sp-logo { margin: 10px 0; }
+  .td-rec-hide-on-tp { display: block !important; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 1068px !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 760px !important; }
+  .rmp-playlist-side-menu { height: 428px !important; }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1400px) {
+  .squadre { width: 1030px !important; }
+  .squadre a div { margin-right: 9px; }
+  .contenitore { width: 1042px; margin: 0 auto; }
+  .td-container { width: 1042px; padding: 0px 5px; }
+  /* Radiant Playlist */
+  .playlist-container .rmp-playlist-container { width: 1068px !important; }
+  .playlist-container .rmp-playlist-player-wrapper { width: 726px !important; }
+  .rmp-playlist-side-menu { height: 408px !important; }
+}
+
+
+
+
+
+
+
+
+/* SportsPress CSS */
+
+.sp-align-left {
+  text-align: left;
+}
+
+.sp-align-right {
+  text-align: right;
+}
+
+.sp-align-center {
+  text-align: center;
+}
+
+/* Header */
+.sp-header {
+  position: relative;
+  overflow: visible;
+  z-index: 10000;
+}
+
+/* Templates */
+.sp-template {
+  margin-bottom: 1.5em;
+}
+.sp-template-logo,
+.sp-template-photo {
+  float: left;
+  margin-bottom: 2em;
+  margin-right: 2em;
+  max-width: 50%;
+}
+.sp-template-event-logos {
+  text-align: center;
+}
+.sp-template-details {
+  display: inline;
+}
+.sp-template-details dl {
+  overflow: hidden;
+}
+
+/* Tabs */
+.sp-tab-menu {
+  display: block;
+  clear: both;
+  padding: 0 5px;
+  margin: 0 0 1.5em;
+  list-style: none;
+}
+.sp-tab-menu-item {
+  display: inline-block;
+  margin: 0;
+}
+.sp-tab-menu-item a {
+  display: block;
+  margin: 0 10px;
+  color: inherit;
+  opacity: 0.5;
+    transition: all .3s;
+}
+.sp-tab-menu-item a:focus {
+    outline: none;
+}
+.sp-tab-menu-item-active a,
+.sp-tab-menu-item a:hover {
+  color: inherit;
+  opacity: 1;
+}
+.sp-tab-content {
+  display: none;
+}
+
+/* Profile selector */
+.sp-profile-selector {
+  float: right;
+}
+
+/* Data Tables */
+.sp-scrollable-table-wrapper {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.sp-data-table {
+  width: 100%;
+  table-layout: auto;
+    border-spacing: 0;
+}
+.sp-paginated-table {
+  margin-bottom: 0;
+}
+.sp-data-table thead th {
+  white-space: nowrap;
+}
+.sp-data-table thead .sorting,
+.sp-data-table thead .sorting_asc,
+.sp-data-table thead .sorting_desc,
+.sp-data-table thead .sorting_asc_disabled,
+.sp-data-table thead .sorting_desc_disabled {
+  cursor: pointer;
+}
+.sp-data-table tbody a {
+  text-decoration: none;
+}
+.sp-data-table .sorting:after,
+.sp-data-table .sorting_asc:after,
+.sp-data-table .sorting_desc:after {
+  font-family: dashicons;
+}
+.sp-data-table .sorting:after {
+  content: "\f156";
+  color: transparent;
+  position: absolute;
+}
+.sp-data-table .sorting_asc:after {
+  content: "\f142";
+  position: absolute;
+}
+.sp-data-table .sorting_desc:after {
+  content: "\f140";
+  position: absolute;
+}
+.sp-data-table .data-name {
+  text-align: left;
+}
+.sp-data-table .data-number,
+.sp-data-table .data-rank {
+  width: 1px;
+}
+
+/* Post Content */
+.sp-post-content {
+  clear: both;
+}
+
+/* Pagination */
+.sp-table-wrapper .dataTables_paginate {
+  text-align: center;
+}
+.sp-table-wrapper .dataTables_paginate .paginate_button {
+  margin: 0.5em;
+  cursor: pointer;
+  display: inline-block;
+}
+.sp-table-wrapper .dataTables_paginate .previous {
+  float: left;
+  margin-left: 0;
+}
+.sp-table-wrapper .dataTables_paginate .next {
+  float: right;
+  margin-right: 0;
+}
+.sp-table-wrapper .dataTables_paginate .current {
+  opacity: 0.5;
+  color: inherit;
+  cursor: default;
+}
+.sp-table-wrapper .dataTables_paginate .disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+/* Post Excerpt */
+.sp-excerpt {
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* League Table */
+.sp-league-table td.has-logo {
+  line-height: 2em;
+}
+.sp-league-table .data-name .team-logo {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.sp-league-table .data-name .team-logo img {
+  width: auto;
+  height: auto;
+  max-width: 2em;
+  max-height: 2em;
+}
+
+/* Player List */
+.sp-player-list td {
+  line-height: 2em;
+}
+.sp-player-list .data-name .player-photo,
+.sp-player-list .data-name .player-flag {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.sp-player-list .data-name .player-photo img,
+.sp-player-list .data-name .player-flag img {
+  width: auto;
+  height: auto;
+  max-width: 2em;
+  max-height: 2em;
+}
+
+/* Button */
+.sp-button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Event Logos */
+.sp-event-logos a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sp-event-logos img {
+  display: inline !important;
+  vertical-align: middle;
+}
+
+/* Events */
+.sp-event-overview,
+.sp-event-performance-tables {
+  overflow: hidden;
+  clear: both;
+}
+
+/* Event Logos */
+.sp-event-logos .sp-team-logo {
+  white-space: nowrap;
+  display: block;
+}
+
+.sp-event-logos .sp-team-logo .sp-team-result {
+  display: block;
+  margin: 0.5em 0;
+}
+
+/* Event Venue */
+.sp-event-venue thead th {
+  white-space: normal;
+}
+
+/* Event Performance */
+.sp-event-performance .sub {
+  background: rgba(0,0,0,0.05);
+}
+.sp-event-performance .sub-in,
+.sp-event-performance .sub-out {
+  cursor: default;
+}
+.sp-event-performance .sub-in:before,
+.sp-event-performance .sub-out:before {
+  font-family: dashicons;
+}
+.sp-event-performance .sub-in:before {
+  content: "\f140";
+}
+.sp-event-performance .sub-out:before {
+  content: "\f142";
+}
+.sp-event-performance .sp-performance-icons {
+  width: 25%;
+}
+
+/* Event Performance (Icons) */
+.sp-event-performance-teams .sp-template-event-performance-icons {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-right: 10px;
+}
+
+.sp-event-performance-teams .sp-template-event-performance-icons:nth-child(2n) {
+  float: right;
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+/* Event Calendar */
+.sp-event-calendar {
+    border-spacing: 0;
+}
+.sp-event-calendar a {
+  text-decoration: none;
+}
+.sp-event-calendar tbody td, .sp-event-calendar thead th {
+  text-align: center;
+}
+.sp-event-calendar #next {
+  text-align: right;
+}
+.sp-event-calendar #prev {
+  text-align: left;
+}
+
+/* Event List */
+.sp-event-list .data-date date,
+.sp-event-list .data-time date {
+  display: none !important;
+}
+.sp-event-list .data-article {
+  white-space: nowrap;
+}
+.sp-event-list .data-article a .dashicons {
+  padding-right: 3px;
+}
+.sp-event-list .data-time,
+.sp-event-list .data-results {
+  white-space: nowrap;
+}
+.sp-event-list .data-home {
+  text-align: right;
+}
+.sp-event-list .data-away {
+  text-align: left;
+}
+.sp-event-list .data-home img,
+.sp-event-list .data-away img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.sp-event-list .data-home img {
+  float: right;
+  margin-left: 8px;
+}
+.sp-event-list .data-away img {
+  float: left;
+  margin-right: 8px;
+}
+.sp-event-list-format-homeaway .data-time {
+  text-align: center;
+}
+
+/* Event Blocks */
+.sp-event-blocks thead {
+  display: none;
+}
+.sp-event-blocks .sp-event-date,
+.sp-event-blocks .sp-event-time,
+.sp-event-blocks .sp-event-results,
+.sp-event-blocks .sp-event-title {
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+  clear: none;
+}
+.sp-event-blocks .sp-event-league,
+.sp-event-blocks .sp-event-season,
+.sp-event-blocks .sp-event-venue {
+  text-align: center;
+  margin: 0 20%;
+  padding: 0 20px;
+}
+.sp-event-blocks .team-logo {
+  margin: 10px;
+  width: 20%;
+  height: 4em;
+  max-width: 6em;
+  text-align: center;
+}
+.sp-event-blocks .logo-odd {
+  float: left;
+}
+.sp-event-blocks .logo-even {
+  float: right;
+}
+.sp-event-blocks .team-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.sp-fixtures-results {
+  clear: both;
+}
+.widget .sp-event-blocks .sp-event-title {
+  margin: 10px;
+  padding: 0;
+  clear: both;
+}
+
+/* Event Logos Block */
+.sp-template-event-logos-block .team-logo {
+  float: none;
+  max-width: none;
+  width: 100%;
+  height: auto;
+  color: inherit;
+}
+
+.sp-template-event-logos-block .team-logo img {
+  vertical-align: middle;
+}
+
+.sp-template-event-logos-block .sp-team-name {
+  display: block;
+  clear: both;
+  vertical-align: middle;
+  font-size: 28px;
+}
+
+.sp-template-event-logos-block .sp-event-results {
+  font-size: 36px;
+}
+
+/* Countdowns */
+.sp-template-countdown .event-name {
+  clear: both;
+  overflow: hidden;
+}
+.sp-template-countdown .team-logo {
+  width: 20%;
+  height: auto;
+  max-width: 4em;
+}
+.sp-template-countdown .logo-odd {
+  float: left;
+  margin-right: 10px;
+}
+.sp-template-countdown .logo-even {
+  float: right;
+  margin-left: 10px;
+}
+.sp-template-countdown .team-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.sp-template-countdown .sp-countdown {
+  clear: both;
+}
+
+/* Google Maps */
+.sp-google-map {
+  width: 100%;
+  height: 320px;
+}
+.sp-google-map img {
+  max-width: none !important;
+}
+.sp-venue-map {
+  margin-bottom: 4em;
+}
+
+/* View All */
+.sp-view-all-link {
+  display: block;
+  margin-top: 0.5em;
+}
+
+/* Alternate */
+.sp-data-table tbody tr.odd {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Highlight & Heading */
+.sp-highlight,
+.sp-heading {
+  font-weight: bold;
+}
+
+/* Hidden Responsive Element */
+.sp-desktop {
+  display: none;
+}
+
+/* Admin Bar */
+#wpadminbar #wp-admin-bar-sportspress>.ab-item:before {
+  font-family: sportspress, dashicons;
+}
+
+#wpadminbar #wp-admin-bar-sportspress>.ab-item:before {
+  content: "\f111";
+  top: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 801px) {
+  /* Widget Alignment */
+  .sp-widget-align-none {
+    clear: both;
+  }
+  .sp-widget-align-left {
+    width: 50%;
+    float: left;
+    clear: left;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+  .sp-widget-align-right {
+    width: 50%;
+    float: right;
+    clear: right;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Hidden Responsive Element */
+  .sp-desktop {
+    display: block;
+  }
+  .sp-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .sp-event-logos .sp-team-logo {
+    display: inline-block;
+  }
+
+  .sp-event-logos-2 .sp-team-logo {
+    display: inline;
+  }
+
+  .sp-event-logos-2 .sp-team-logo .sp-team-result {
+    display: inline-block;
+    margin: 0 0.25em;
+  }
+  
+  .sp-template-logo + .sp-post-content {
+    clear: left;
+  }
+  
+  .sp-template-photo + .sp-post-content {
+    clear: none;
+  }
+
+  .sp-template-event-logos-block .team-logo {
+    width: 33%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sp-template-event-logos-block .team-logo img {
+    height: 100px;
+  }
+
+  .sp-template-event-logos-block .logo-odd {
+    text-align: left;
+    float: left;
+  }
+
+  .sp-template-event-logos-block .logo-even {
+    text-align: right;
+    float: right;
+  }
+  
+  .sp-template-event-logos-block .logo-odd img {
+    margin-right: 10px;
+  }
+  
+  .sp-template-event-logos-block .logo-even img {
+    margin-left: 10px;
+  }
+  
+  .sp-template-event-logos-block .sp-team-name {
+    display: inline;
+    clear: none;
+  }
+}
+
+/* SportsPress icons */
+@font-face {
+  font-family: 'sportspress';
+  src:url('https://www.calcionews24.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/fonts/sportspress.eot?-76nsup');
+  src:url('https://www.calcionews24.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/fonts/sportspress.eot?#iefix-76nsup') format('embedded-opentype'),
+    url('https://www.calcionews24.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/fonts/sportspress.woff2?-76nsup') format('woff2'),
+    url('https://www.calcionews24.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/fonts/sportspress.ttf?-76nsup') format('truetype'),
+    url('https://www.calcionews24.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/fonts/sportspress.woff?-76nsup') format('woff'),
+    url('https://www.calcionews24.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/fonts/sportspress.svg?-76nsup#sportspress') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="sp-icon-"], [class*=" sp-icon-"] {
+  font-family: sportspress, dashicons;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  vertical-align: top;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sp-icon-baseball:before {
+  content: "\e701";
+}
+.sp-icon-basketball:before {
+  content: "\e602";
+}
+.sp-icon-cricketball:before {
+  content: "\e604";
+}
+.sp-icon-soccerball:before {
+  content: "\e700";
+}
+.sp-icon-shoe:before {
+  content: "\e800";
+}
+.sp-icon-card:before {
+  content: "\e801";
+}
+/* END Sportspress CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * feedzy-rss-feeds.css
+ * Feedzy RSS Feed
+ * Copyright: (c) 2016 Themeisle, themeisle.com
+ * Version: 3.2.0
+ * Plugin Name: FEEDZY RSS Feeds
+ * Plugin URI: http://themeisle.com/plugins/feedzy-rss-feeds/
+ * Author: Themeisle
+ */
+ /*
+.feedzy-rss > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.feedzy-rss .rss_item {
+  border-bottom: 1px solid #eee;
+  list-style: none;
+}
+
+.feedzy-rss .rss_item .title {
+  font-weight: bold;
+}
+
+.feedzy-rss .rss_item:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.feedzy-rss .rss_item .rss_image {
+  float: left;
+  position: relative;
+  border: none;
+  text-decoration: none;
+}
+
+.feedzy-rss .rss_item .rss_image span {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.feedzy-rss .rss_item .rss_image .fetched {
+  z-index: 9;
+}
+
+.feedzy-rss .rss_item .rss_image {
+  margin: 0.3em 1em 0 0;
+}
+
+.feedzy-rss .rss_item .rss_content small {
+  display: block;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+i.mce-i-feedzy-icon {
+  background-image: none, url("../img/feedzy.svg"), url("../img/feedzy.png");
+}
+
+#feedzy-rss-button-insert {
+  border-color: #4cae4c;
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+#feedzy-rss-button-insert button {
+  color: #fff;
+}
+
+#feedzy-rss-button-insert:hover,
+#feedzy-rss-button-insert:focus {
+  border-color: #398439;
+  color: #fff;
+  background-color: #449d44;
+}
+
+#feedzy-rss-button-cancel {
+  border-color: #ccc;
+  color: #333;
+  background-color: #fff;
+}
+
+#feedzy-rss-button-cancel button {
+  color: #333;
+}
+
+#feedzy-rss-button-cancel:hover,
+#feedzy-rss-button-cancel:focus {
+  border-color: #adadad;
+  color: #333;
+  background-color: #e6e6e6;
+}
+
+#feedzy-rss-button-pro {
+  position: absolute;
+  left: 10px !important;
+  border-color: #46b8da;
+  color: #fff;
+  background-color: #5bc0de;
+}
+
+#feedzy-rss-button-pro button {
+  color: #fff;
+}
+
+#feedzy-rss-button-pro:hover,
+#feedzy-rss-button-pro:focus {
+  border-color: #269abc;
+  color: #fff;
+  background-color: #31b0d5;
+}
+
+#feedzy-rss-insert-dialog-title {
+  font-weight: 300;
+  text-align: center;
+}
+
+.feedzy-rss ul {
+  margin: 0 -2%;
+}
+
+.feedzy-rss ul:before,
+.feedzy-rss ul:after {
+  display: table;
+  content: " ";
+}
+
+.feedzy-rss ul:after {
+  clear: both;
+}
+
+.feedzy-rss .rss_item {
+  margin: 2%;
+  padding: 0;
+}
+
+/* Default */
+/*
+.feedzy-rss .feedzy-default .rss_image,
+.feedzy-rss .feedzy-default .rss_content_wrap {
+  display: inline-block;
+  width: 100%;
+}
+
+.feedzy-rss .feedzy-default .rss_image {
+  float: none;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.feedzy-rss .feedzy-default .rss_content_wrap {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+
+.feedzy-rss .feedzy-style1 .rss_image,
+.feedzy-rss .feedzy-style1 .rss_content_wrap {
+  display: inline-block;
+  width: 100%;
+}
+
+.feedzy-rss .feedzy-style1 .rss_item .rss_image span {
+  width: 100%;
+}
+
+.feedzy-rss .feedzy-style1 .rss_content_wrap {
+  text-align: left;
+}
+
+.feedzy-rss .feedzy-style1 .rss_item {
+  text-align: center;
+}
+
+.feedzy-rss .feedzy-style2 .rss_item .rss_image {
+  float: none;
+}
+
+.feedzy-rss .feedzy-style2 .rss_item .rss_image span {
+  width: 100%;
+}
+
+.feedzy-rss .feedzy-style2 .rss_content_wrap {
+  text-align: left;
+}
+
+.feedzy-rss .feedzy-style2  .rss_item {
+  text-align: center;
+}
+
+.feedzy-rss .feedzy-style1 .rss_image {
+  float: none;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: 0.75s ease;
+  transition: 0.75s ease;
+}
+
+.feedzy-rss .feedzy-style1 .rss_image a {
+  border: 3px solid transparent;
+  border-radius: 50%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.feedzy-rss .feedzy-style1 .rss_image a span {
+  display: inline-block;
+  left: 0;
+  border-radius: 50%;
+}
+
+.feedzy-rss .feedzy-style1 .rss_item:hover .rss_image a {
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.feedzy-rss .feedzy-style1 .rss_content_wrap {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.feedzy-rss .feedzy-style1 .rss_content_wrap .title a {
+  text-decoration: none;
+}
+
+.feedzy-rss .feedzy-style1 .rss_content_wrap .title a:hover {
+  text-decoration: underline;
+}
+
+.feedzy-rss .feedzy-style1 .rss_content .description {
+  margin: 0;
+  padding: 0;
+  font-size: 90%;
+}
+
+.feedzy-rss .feedzy-style1 .rss_content .price-wrap {
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.feedzy-rss .feedzy-style1 .rss_content .price {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  background: #4f6d8d;
+  font-weight: 700;
+}
+
+
+.feedzy-rss .feedzy-style2 .rss_item {
+  padding: 0 !important;
+  border: 1px solid #e3edeb;
+  border-radius: 5px;
+}
+
+.feedzy-rss .feedzy-style2 .rss_image span {
+  left: 0;
+}
+
+.feedzy-rss .feedzy-style2 .rss_image,
+.feedzy-rss .feedzy-style2 .rss_content_wrap {
+  display: inline-block;
+  width: 100%;
+}
+
+.feedzy-rss .feedzy-style2 .rss_image {
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  border-bottom: 7px solid #355c7d;
+  line-height: 0;
+  text-align: center;
+}
+
+.feedzy-rss .feedzy-style2 .rss_image a span {
+  display: inline-block;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.feedzy-rss .feedzy-style2 .rss_item:hover .rss_image a span {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.feedzy-rss .feedzy-style2 .rss_content_wrap {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0;
+}
+
+.feedzy-rss .feedzy-style2 .rss_content_wrap .title {
+  display: block;
+  padding: 10px 15px;
+}
+
+.feedzy-rss .feedzy-style2 .rss_content_wrap .title a {
+  color: #355c7d;
+  text-decoration: none;
+}
+
+.feedzy-rss .feedzy-style2 .rss_content_wrap .title a:hover {
+  text-decoration: underline;
+}
+
+.feedzy-rss .feedzy-style2 .rss_content .meta {
+  padding: 10px 15px;
+  border-top: 1px solid #e3edeb;
+  border-bottom: 1px solid #e3edeb;
+  background-color: #f1f5f4;
+}
+
+.feedzy-rss .feedzy-style2 .rss_content .description {
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 90%;
+  line-height: 1.5;
+}
+
+.feedzy-rss .feedzy-style2 .rss_content .price-wrap {
+  margin: 10px 0 15px;
+  text-align: center;
+}
+
+.feedzy-rss .feedzy-style2 .rss_content .price {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #fff;
+  background: #355c7d;
+  font-weight: 700;
+}
+
+
+.feedzy-rss .feedzy-rss-col-1 {
+  width: 96%;
+}
+
+
+.feedzy-rss .feedzy-rss-col-2,
+.feedzy-rss .feedzy-rss-col-3,
+.feedzy-rss .feedzy-rss-col-4,
+.feedzy-rss .feedzy-rss-col-5,
+.feedzy-rss .feedzy-rss-col-6 {
+  float: left;
+  width: 96%;
+}
+
+@media screen and (min-width: 768px) {
+  .feedzy-rss .feedzy-rss-col-2,
+  .feedzy-rss .feedzy-rss-col-3,
+  .feedzy-rss .feedzy-rss-col-4,
+  .feedzy-rss .feedzy-rss-col-5,
+  .feedzy-rss .feedzy-rss-col-6 {
+    width: 46%;
+  }
+
+  .feedzy-rss .feedzy-rss-col-2:nth-child(2n+1),
+  .feedzy-rss .feedzy-rss-col-3:nth-child(2n+1),
+  .feedzy-rss .feedzy-rss-col-4:nth-child(2n+1),
+  .feedzy-rss .feedzy-rss-col-5:nth-child(2n+1),
+  .feedzy-rss .feedzy-rss-col-6:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .feedzy-rss .feedzy-rss-col-3,
+  .feedzy-rss .feedzy-rss-col-4,
+  .feedzy-rss .feedzy-rss-col-5,
+  .feedzy-rss .feedzy-rss-col-6 {
+    width: 29.33333%;
+  }
+
+  .feedzy-rss .feedzy-rss-col-3:nth-child(2n+1),
+  .feedzy-rss .feedzy-rss-col-4:nth-child(2n+1),
+  .feedzy-rss .feedzy-rss-col-5:nth-child(2n+1),
+  .feedzy-rss .feedzy-rss-col-6:nth-child(2n+1) {
+    clear: none;
+  }
+
+  .feedzy-rss .feedzy-rss-col-3:nth-child(3n+1),
+  .feedzy-rss .feedzy-rss-col-4:nth-child(3n+1),
+  .feedzy-rss .feedzy-rss-col-5:nth-child(3n+1),
+  .feedzy-rss .feedzy-rss-col-6:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feedzy-rss .feedzy-rss-col-4 {
+    width: 21%;
+  }
+
+  .feedzy-rss .feedzy-rss-col-5 {
+    width: 16%;
+  }
+
+  .feedzy-rss .feedzy-rss-col-6 {
+    width: 12.66666%;
+  }
+
+  .feedzy-rss .feedzy-rss-col-4:nth-child(3n+1),
+  .feedzy-rss .feedzy-rss-col-5:nth-child(3n+1),
+  .feedzy-rss .feedzy-rss-col-6:nth-child(3n+1) {
+    clear: none;
+  }
+
+  .feedzy-rss .feedzy-rss-col-4:nth-child(4n+1),
+  .feedzy-rss .feedzy-rss-col-5:nth-child(5n+1),
+  .feedzy-rss .feedzy-rss-col-6:nth-child(6n+1) {
+    clear: both;
+  }
+}
+
+.feedzy-switch {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 18px;
+  margin-left: 20px;
+}
+
+.feedzy-switch input {
+  display: none;
+}
+
+.feedzy-tracking sup {
+  vertical-align: 3px;
+}
+
+.feedzy-track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ccc;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.feedzy-track:before {
+  position: absolute;
+  bottom: 1.5px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  content: "";
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .feedzy-track {
+  background-color: #0085ba;
+}
+
+input:focus + .feedzy-track {
+  -webkit-box-shadow: 0 0 1px #0085ba;
+  box-shadow: 0 0 1px #0085ba;
+}
+
+input:checked + .feedzy-track:before {
+  -webkit-transform: translateX(11px);
+  -ms-transform: translateX(11px);
+  transform: translateX(11px);
+}
+
+.feedzy-track.visualizer-round {
+  border-radius: 34px;
+}
+
+.feedzy-track.visualizer-round:before {
+  border-radius: 50%;
+}
+
+.feedzy-tracking p small sup {
+  margin-left: -3px;
+}
+
+.feedzy-tracking p {
+  padding-left: 14px;
+  color: #23282d;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: left;
+}
+
+.feedzy-tracking span {
+  margin-left: 10px;
+  color: #23282d;
+  background: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.more-features-icon {
+  width: 17px;
+  height: 17px;
+  margin-left: 4px;
+  color: #ffca54;
+  font-size: 17px;
+  vertical-align: -3px;
+}
+
+.post-type-feedzy_categories .postbox-container div#submitdiv,
+.post-type-feedzy_categories #feedzy_category_feeds_rn {
+  display: block !important;
+}
+
+.post-type-feedzy_categories .postbox-container > div > .postbox:not(#feedzy_category_feeds) {
+  display: none;
+}
+/* END Feedzy CSS */
