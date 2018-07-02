@@ -86,6 +86,7 @@ if (td_util::get_option('tds_footer') != 'no') {
 <?php } ?>
 </div><!--close td-outer-wrap-->
 
+
 <div class="newtekadv-mobile-bottom">
   <?php if (function_exists('adv_bottom_mobile')) {
     adv_bottom_mobile();
@@ -262,6 +263,38 @@ return init(function(){});}));
   </script>
 <?php endif; ?>
 
+
+
+<script type="text/javascript">
+	/*GBS */
+   window._seedtagq = window._seedtagq || [];
+
+   window._seedtagq.push(['_setId', '7503-2208-01']);
+
+    window._seedtagq.push(['iframe_mode']);
+
+   (function () {
+
+     var st = document.createElement('script');
+
+     st.type = 'text/javascript';
+
+     st.async = true;
+
+     st.src = ('https:' == document.location.protocol
+
+       ? 'https'
+
+       : 'http') + '://config.seedtag.com/loader.js?v=' + Math.random();
+
+     var s = document.getElementsByTagName('script')[0];
+
+     s.parentNode.insertBefore(st, s);
+
+   })();
+
+   </script>
+
 <script>
 	//GBS
 	//
@@ -314,6 +347,23 @@ return init(function(){});}));
 				jQuery.cookie('noShowBannerApp', true);
         	});
     	}
+		
+		jQuery(window).scroll(function() {
+			if (navigator.userAgent.search("iPhone") >= 0) {
+        		console.log('scrolling ', jQuery(window).scrollTop(), jQuery(document).height());
+        		if(jQuery(window).scrollTop() >= 200 && jQuery(window).scrollTop() <= (jQuery(document).height() - 500)) {
+        		    jQuery("#android-banner").hide();
+					jQuery(".contenitore").css('top','55px');
+        		}
+			}
+			else if (navigator.userAgent.search("Android") >= 0) {
+				console.log('scrolling ', jQuery(window).scrollTop(), jQuery(document).height());
+        		if(jQuery(window).scrollTop() >= 200 && jQuery(window).scrollTop() <= (jQuery(document).height() - 500)) {
+        		    jQuery("#android-banner").hide();
+					jQuery(".contenitore").css('top','55px');
+        		}
+			}	
+    	});
     })
 	
 	//jquery.cookie.js

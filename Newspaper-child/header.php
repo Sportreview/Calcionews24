@@ -60,14 +60,15 @@
   } ?>
 
 
-  <?php if (function_exists('adv_skin')) {
-    adv_skin();
-  } ?>
   
    <?php if (function_exists('adv_high_impact')) {
     adv_high_impact();
   } ?>
 
+  <?php if (function_exists('adv_skin')) {
+    adv_skin();
+  } ?>
+  
 
     <?php /* scroll to top */?>
     <div class="td-scroll-up"><i class="td-icon-menu-up"></i></div>
