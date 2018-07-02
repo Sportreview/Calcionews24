@@ -212,6 +212,17 @@ function testgbsRSSFunc(){
 }
 // Test Feed
 
+
+//Custom rss feed App url: feed/app
+add_action( 'after_setup_theme', 'my_rss_apptemplate' );
+function my_rss_apptemplate() {
+  add_feed( 'app', 'my_custom_rss_apprender' );
+}
+function my_custom_rss_apprender() {
+  get_template_part( 'feed', 'app' );
+}
+//Custom rss feed url: feed/app
+
 // Aggiungi Page Break
 add_filter( 'mce_buttons', 'my_add_page_break_button', 1, 2 );
 function my_add_page_break_button( $buttons, $id ){
@@ -936,12 +947,14 @@ function adv_libs() { ?>
   </script>
   <script>
     googletag.cmd.push(function() {
-      googletag.defineSlot('/21624773413/Calcionews24.com/Top_Desktop', [[728, 90], [970, 250]], 'div-gpt-ad-Top_Desktop').addService(googletag.pubads());
-      googletag.defineSlot('/21624773413/Calcionews24.com/Top_Mobile', [[320, 50], [320, 100]], 'div-gpt-ad-Top_Mobile').addService(googletag.pubads());
-      googletag.defineSlot('/21624773413/Calcionews24.com/Mpu_Top', [[300, 250], [300, 600]], 'div-gpt-ad-Mpu_Top').addService(googletag.pubads());
-      googletag.defineSlot('/21624773413/Calcionews24.com/Mpu_Middle', [300, 250], 'div-gpt-ad-Mpu_Middle').addService(googletag.pubads());
-      googletag.defineSlot('/21624773413/Calcionews24.com/Bottom_Mobile', [320, 50], 'div-gpt-ad-Bottom_Mobile').addService(googletag.pubads());
-      //googletag.pubads().enableSingleRequest();
+      googletag.defineSlot('/67970281/display_thirdparty_it/calcionews24_responsive/ros/top_banner', [[1056, 250], [970, 250], [728, 90], [980, 250], [320, 50]], 'div-gpt-ad-1521727602147-2').setTargeting('Display_Ad_Position', ['ATF']).addService(googletag.pubads());
+      googletag.defineSlot('/67970281/display_thirdparty_it/calcionews24_responsive/homepage/top_banner', [[1056, 250], [970, 250], [728, 90], [980, 250], [320, 50]], 'div-gpt-ad-1521727849156-2').setTargeting('Display_Ad_Position', ['ATF']).addService(googletag.pubads());
+      googletag.defineSlot('/67970281/display_thirdparty_it/calcionews24_responsive/ros/top_mpu', [[300, 600], [300, 250]], 'div-gpt-ad-1521727602147-3').setTargeting('Display_Ad_Position', ['ATF']).addService(googletag.pubads());
+      googletag.defineSlot('/67970281/display_thirdparty_it/calcionews24_responsive/homepage/top_mpu', [[300, 600], [300, 250]], 'div-gpt-ad-1521727849156-3').setTargeting('Display_Ad_Position', ['ATF']).addService(googletag.pubads());
+      googletag.defineSlot('/67970281/display_thirdparty_it/calcionews24_responsive/ros/skin', [1, 1], 'div-gpt-ad-1521727602147-1').setTargeting('Display_Ad_Size', ['Skin']).setTargeting('Display_Ad_Position', ['ATF']).addService(googletag.pubads());
+      googletag.defineSlot('/67970281/display_thirdparty_it/calcionews24_responsive/homepage/skin', [1, 1], 'div-gpt-ad-1521727849156-1').setTargeting('Display_Ad_Size', ['Skin']).setTargeting('Display_Ad_Position', ['ATF']).addService(googletag.pubads());
+      googletag.defineOutOfPageSlot('/67970281/display_thirdparty_it/calcionews24_responsive/ros/high_impact', 'div-gpt-ad-1521727602147-0').setTargeting('Display_Ad_Size', ['Out-of-page']).setTargeting('Display_Ad_Position', ['ATF']).addService(googletag.pubads());
+      googletag.defineOutOfPageSlot('/67970281/display_thirdparty_it/calcionews24_responsive/homepage/high_impact', 'div-gpt-ad-1521727849156-0').setTargeting('Display_Ad_Size', ['Out-of-page']).setTargeting('Display_Ad_Position', ['ATF']).addService(googletag.pubads());
       googletag.pubads().collapseEmptyDivs();
       googletag.enableServices();
     });
@@ -996,71 +1009,147 @@ src="https://www.facebook.com/tr?id=174966789899601&ev=PageView
 <!-- End Facebook Pixel Code (noscript) -->
 <?php }//adv_facebook_pixel_code_noscript
 
-function adv_skin() { ?>
-  <script type="text/javascript">
-    simply_publisher = 74141;
-    simply_domain = 91629;
-    simply_space = 178927;
-    simply_ad_height = 1;
-    simply_ad_width = 1;
-    simply_callback = '';
-  </script>
-  <script type="text/javascript">
-    var cb = Math.round(new Date().getTime());
-    document.write('<scr'+'ipt type="text/javascript" src="'+ ('https:' == document.location.protocol ? 'https://' : 'http://') + 'optimized-by.4wnetwork.com/simply_loader.js?cb='+ cb +'"></scr' + 'ipt>');
-  </script>
-<?php }//adv_skin
 
+function adv_skin() {
+  if (is_front_page()) { ?>
+   <!-- /67970281/display_thirdparty_it/calcionews24_responsive/homepage/skin -->
+<div id='div-gpt-ad-1521727849156-1' style='height:1px; width:1px;'>
+<script>
+        if (!isMobileNewtek) {
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1521727849156-1'); });
+        } else {
+          jQuery("#div-gpt-ad-1521727849156-1").hide();
+        }
+      </script>
+    </div>
+  <?php } else { ?>
+    <!-- /67970281/display_thirdparty_it/calcionews24_responsive/ros/skin -->
+    <div id='div-gpt-ad-1521727602147-1' style='height:1px; width:1px;'>
+      <script>
+        if (!isMobileNewtek) {
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1521727602147-1'); });
+        } else {
+          jQuery("#div-gpt-ad-1521727602147-1").hide();
+        }
+      </script>
+    </div>
+  <?php }
+}//adv_skin
 
-function adv_top_desktop() { ?>
-  <!-- /21624773413/Calcionews24.com/Top_Desktop -->
-  <div id='div-gpt-ad-Top_Desktop'>
-  <script>
-    if (!isMobileNewtek) {
-      googletag.cmd.push(function() { googletag.display('div-gpt-ad-Top_Desktop'); });
-    } else {
-      jQuery("#div-gpt-ad-Top_Desktop").hide();
-    }
-  </script>
-  </div>
-<?php }//adv_top_desktop
+function adv_high_impact() {
+  if (is_front_page()) { ?>
+   <!-- /67970281/display_thirdparty_it/calcionews24_responsive/homepage/high_impact -->
+<div id='div-gpt-ad-1521727849156-0'>
+<script>
+        if (isMobileNewtek) {
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1521727849156-0'); });
+        } else {
+          jQuery("#div-gpt-ad-1521727849156-0").hide();
+        }
+      </script>
+    </div>
+  <?php } else { ?>
+    <!-- /67970281/display_thirdparty_it/calcionews24_responsive/ros/high_impact -->
+    <div id='div-gpt-ad-1521727602147-0'>
+      <script>
+        if (isMobileNewtek) {
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1521727602147-0'); });
+        } else {
+          jQuery("#div-gpt-ad-1521727602147-0").hide();
+        }
+      </script>
+    </div>
+  <?php }
+}//adv_high_impact
+
+function adv_top_desktop() {
+  if (is_front_page()) { ?>
+   <!-- /67970281/display_thirdparty_it/calcionews24_responsive/homepage/top_banner -->
+<div id='div-gpt-ad-1521727849156-2'>
+<script>
+        if (!isMobileNewtek) {
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1521727849156-2'); });
+        } else {
+          jQuery("#div-gpt-ad-1521727849156-2").hide();
+        }
+      </script>
+    </div>
+  <?php } else { ?>
+   <!-- /67970281/display_thirdparty_it/calcionews24_responsive/ros/top_banner -->
+    <div id='div-gpt-ad-1521727602147-2'>
+      <script>
+        if (!isMobileNewtek) {
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1521727602147-2'); });
+        } else {
+          jQuery("#div-gpt-ad-1521727602147-2").hide();
+        }
+      </script>
+    </div>
+  <?php }
+}//adv_top_desktop
 
 
 function adv_top_mobile() { ?>
-  <!-- /21624773413/Calcionews24.com/Top_Mobile -->
-  <div id='div-gpt-ad-Top_Mobile'>
+  <!-- /67970281/display_thirdparty_it/calcionews24_responsive/ros/top_mpu -->
+  <div id='div-gpt-ad-1521727602147-3' style='height:250px; width:300px;'>
   <script>
     if (isMobileNewtek) {
-      googletag.cmd.push(function() { googletag.display('div-gpt-ad-Top_Mobile'); });
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1521727602147-3'); });
     } else {
-      jQuery("#div-gpt-ad-Top_Mobile").hide();
+      jQuery("#div-gpt-ad-1521727602147-3").hide();
     }
   </script>
   </div>
 <?php }//adv_top_mobile
 
-
-function adv_top_mobile_singular() {
-  if (is_front_page()) {
-    //
-  } else if (is_category()) {
-    //
-  } else {
-    if (function_exists('adv_top_mobile')) {
-      adv_top_mobile();
+function adv_top_mobile_single() {
+  if (is_single()) { ?>
+    <script type="text/javascript">
+    if (isMobileNewtek) {
+      top_mobile_content = '<!-- /67970281/display_thirdparty_it/calcionews24_responsive/ros/top_mpu -->\
+        <div id="div-gpt-ad-1521727602147-3">\
+        <script>\
+          if (isMobileNewtek) {\
+            googletag.cmd.push(function() { googletag.display("div-gpt-ad-1521727602147-3"); });\
+          } else {\
+            jQuery("#div-gpt-ad-1521727602147-3").hide();\
+          }\
+        <\/script>\
+        <\/div>';
+      jQuery(".td-post-content h2:nth-of-type(1)").after(top_mobile_content);
+    } else {
+      jQuery("#adv_top_mobile_single").hide();
     }
-  }
+    </script>
+  <?php }
 }//adv_top_mobile_single
 
 
-function adv_mpu_top() { ?>
-  <!-- /21624773413/Calcionews24.com/Mpu_Top -->
-  <div id='div-gpt-ad-Mpu_Top'>
-  <script>
-  googletag.cmd.push(function() { googletag.display('div-gpt-ad-Mpu_Top'); });
-  </script>
-  </div>
-<?php }//adv_mpu_top
+function adv_mpu_top() {
+  if (is_front_page()) { ?>
+   <!-- /67970281/display_thirdparty_it/calcionews24_responsive/homepage/top_mpu -->
+<div id='div-gpt-ad-1521727849156-3'>
+<script>
+if (isMobileNewtek) {
+ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1521727849156-3'); });
+} else {
+          jQuery("#div-gpt-ad-1521727849156-3").hide();
+        }
+</script>
+    </div>
+  <?php } else { ?>
+    <!-- /67970281/display_thirdparty_it/calcionews24_responsive/ros/top_mpu -->
+    <div id='div-gpt-ad-1521727602147-3'>
+    <script>
+        if (isMobileNewtek) {
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1521727602147-3'); });
+        } else {
+        jQuery("#div-gpt-ad-1521727602147-3").hide();
+        }
+      </script>
+    </div>
+  <?php }
+}//adv_mpu_top
 
 
 function adv_mpu_middle() { ?>
@@ -1073,24 +1162,32 @@ function adv_mpu_middle() { ?>
 <?php }//adv_mpu_middle
 
 
-function adv_bottom_mobile() { ?>
-  <!-- /21624773413/Calcionews24.com/Bottom_Mobile -->
-  <div id='div-gpt-ad-Bottom_Mobile' style='height:50px; width:320px;'>
-  <script>
-  googletag.cmd.push(function() { googletag.display('div-gpt-ad-Bottom_Mobile'); });
-  </script>
-  </div>
-<?php }//adv_bottom_mobile
+function adv_bottom_mobile() {
+  if (is_front_page()) { ?>
+   <!-- /67970281/display_thirdparty_it/calcionews24_responsive/homepage/top_banner -->
+<div id='div-gpt-ad-1521727849156-2'>
+<script>
+        if (isMobileNewtek) {
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1521727849156-2'); });
+        } else {
+          jQuery("#div-gpt-ad-1521727849156-2").hide();
+        }
+      </script>
+    </div>
+  <?php } else { ?>
+    <!-- /67970281/display_thirdparty_it/calcionews24_responsive/ros/top_banner -->
+    <div id='div-gpt-ad-1521727602147-2'>
+      <script>
+        if (isMobileNewtek) {
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1521727602147-2'); });
+        } else {
+          jQuery("#div-gpt-ad-1521727602147-2").hide();
+        }
+      </script>
+    </div>
+  <?php }
+}//adv_bottom_mobile
 
-
-function adv_overlay() { ?>
-  <!-- /21624773413/Calcionews24.com/Overlay -->
-  <div id='div-gpt-ad-Overlay'>
-  <script>
-  googletag.cmd.push(function() { googletag.display('div-gpt-ad-Overlay'); });
-  </script>
-  </div>
-<?php }//adv_overlay
 
 
 function adv_in_feed() {
@@ -1114,6 +1211,7 @@ function adv_in_feed() {
 
 function adv_in_article() { ?>
   <script>
+  if (!isMobileNewtek) {
     var code1 = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script>\
       <ins class="adsbygoogle adv_inarticle"\
       style="display:block; text-align:center;"\
@@ -1125,8 +1223,13 @@ function adv_in_article() { ?>
       (adsbygoogle = window.adsbygoogle || []).push({});\
       <\/script>';
       jQuery( ".td-post-content h2:nth-of-type(1)" ).after( code1 );
+   } else {
+      jQuery("#adv_in_article").hide();
+    }
   </script>
 <?php }//adv_in_article
+
+
 
 function adv_in_article_paragrafo() { ?>
   <script>
@@ -1160,9 +1263,9 @@ function correlati_adsense() { ?>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
   style="display:block"
-  data-ad-format="autorelaxed"
   data-ad-client="ca-pub-4951276053293022"
-  data-ad-slot="7891445420"></ins>
+  data-ad-slot="7891445420"
+  data-ad-format="autorelaxed"></ins>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script>

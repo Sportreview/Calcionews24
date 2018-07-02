@@ -63,8 +63,10 @@
   <?php if (function_exists('adv_skin')) {
     adv_skin();
   } ?>
-
-
+  
+   <?php if (function_exists('adv_high_impact')) {
+    adv_high_impact();
+  } ?>
 
 
     <?php /* scroll to top */?>

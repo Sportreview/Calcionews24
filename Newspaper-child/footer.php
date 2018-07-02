@@ -86,7 +86,6 @@ if (td_util::get_option('tds_footer') != 'no') {
 <?php } ?>
 </div><!--close td-outer-wrap-->
 
-
 <div class="newtekadv-mobile-bottom">
   <?php if (function_exists('adv_bottom_mobile')) {
     adv_bottom_mobile();
